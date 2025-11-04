@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Small local business serving the Phoenix East Valley and Scottsdale. EPA-approved, eco friendly, non toxic cleaners. $8 exterior, $12 complete, $8 screens.">
+    <meta name="keywords" content="window cleaning Gilbert, window cleaning Chandler, window cleaning Mesa, window cleaning Tempe, window cleaning Queen Creek, window cleaning Apache Junction, window cleaning San Tan Valley, window cleaning Scottsdale, Scottsdale window cleaning, window cleaning east valley, Phoenix east valley window cleaning, east valley window cleaning, window washing, eco friendly window cleaning, veteran owned small business, veteran owned window cleaning, local window cleaning, Phoenix Metro, residential window cleaning">
+    <title>Sonoran Green | Veteran Owned Eco Friendly Window Cleaning | Phoenix East Valley and Scottsdale</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sonoran Green Window Cleaning",
+      "image": [
+        "https://sonorangreenwindowcleaning.com/Images/sonoran-green-window-cleaning-logo.png",
+        "https://sonorangreenwindowcleaning.com/Images/sonoran-green-window-cleaning-service-area-phoenix-east-valley-scottsdale-arizona.jpg"
+      ],
+      "@id": "https://sonorangreenwindowcleaning.com",
+      "url": "https://sonorangreenwindowcleaning.com",
+      "telephone": "(602) 725-9198",
+      "priceRange": "$8-$12 per window",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1725 S Coronado Rd, Apt 3110",
+        "addressLocality": "Gilbert",
+        "addressRegion": "AZ",
+        "postalCode": "85295",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.320325,
+        "longitude": -111.7452106
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "FACEBOOK_URL_HERE",
+        "INSTAGRAM_URL_HERE"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Gilbert"
+        },
+        {
+          "@type": "City",
+          "name": "Chandler"
+        },
+        {
+          "@type": "City",
+          "name": "Mesa"
+        },
+        {
+          "@type": "City",
+          "name": "Tempe"
+        },
+        {
+          "@type": "City",
+          "name": "Queen Creek"
+        },
+        {
+          "@type": "City",
+          "name": "Apache Junction"
+        },
+        {
+          "@type": "City",
+          "name": "San Tan Valley"
+        },
+        {
+          "@type": "City",
+          "name": "Scottsdale"
+        }
+      ],
+      "description": "Veteran-owned window cleaning service serving the Phoenix East Valley and Scottsdale. EPA-approved eco-friendly cleaners, first floor windows only."
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f9ed;
+        }
+        
+        /* Cover any gap above header on mobile - attached to body instead of header */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background-color: #eef7e4;
+            z-index: 101;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lobster', cursive;
+            font-weight: normal;
+        }
+        
+        h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        }
+        
+        /* Header and Navigation */
+        header {
+            background-color: #eef7e4;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.75rem 2rem 0.15rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: 'Lobster', cursive;
+            color: #2d5016;
+            line-height: 1;
+        }
+        
+        .logo .green {
+            color: #4a7c2c;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 4rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            font-family: 'Lobster', cursive;
+            color: #333;
+            font-weight: 500;
+            font-size: 2.5rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #4a7c2c;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .hero-content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero-logo {
+            flex: 0 0 40%;
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2.25rem 2rem;
+        }
+        
+        .hero-logo-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        /* Logo Placeholder in Hero */
+        .hero-logo-placeholder {
+            width: 100%;
+            max-width: 262px;
+            height: 262px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a7c2c;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 2rem;
+            border: 4px solid #4a7c2c;
+        }
+        
+        .hero-text {
+            flex: 0 0 60%;
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            color: white;
+            padding: 2.25rem 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #FBF1BE;
+            color: #2d5016;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 12px;
+            font-family: 'Lobster', cursive;
+            font-weight: normal;
+            font-size: 2.0rem;
+            border: 8px solid #4a7c2c;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        /* Mobile Logo - Hidden on Desktop */
+        .mobile-logo {
+            display: none;
+        }
+        
+        @media (min-width: 769px) {
+            .mobile-logo {
+                display: none;
+            }
+        }
+        
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.5rem 2rem 2rem 2rem;
+        }
+        
+        /* Sections */
+        section {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        section h2 {
+            color: #2d5016;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #4a7c2c;
+            padding-left: 1rem;
+        }
+        
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pricing-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #4a7c2c;
+        }
+        
+        .pricing-card h3 {
+            color: #2d5016;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            color: #4a7c2c;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        .price-unit {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .pricing-card ul {
+            list-style: none;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+        
+        .pricing-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .pricing-card li:before {
+            content: "✓";
+            color: #4a7c2c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            padding: 1.5rem;
+            border-left: 3px solid #4a7c2c;
+            background-color: #f8f9f8;
+            border-radius: 4px;
+        }
+        
+        .feature-card h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            color: #2d5016;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Service Areas */
+        .service-areas {
+            background-color: #f8f9f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .service-areas h3 {
+            color: #2d5016;
+            margin-bottom: 1rem;
+        }
+        
+        .cities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .city-tag {
+            background-color: #4a7c2c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2d5016;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-cities {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0 1rem 0 1rem;
+                justify-items: center;
+            }
+            
+            .logo {
+                display: none;
+            }
+            
+            .mobile-logo {
+                display: block;
+                width: 200px;
+                height: 200px;
+            }
+            
+            .mobile-logo-img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            
+            .mobile-logo-placeholder {
+                width: 200px;
+                height: 200px;
+                background: rgba(74, 124, 44, 0.1);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #4a7c2c;
+                font-size: 1.2rem;
+                text-align: center;
+                color: #4a7c2c;
+                font-weight: bold;
+                padding: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.25rem;
+                margin: 0;
+                align-items: flex-start;
+                justify-self: start;
+            }
+            
+            nav a {
+                padding: 0.25rem 0.75rem;
+                display: block;
+                font-size: 2.5rem;
+                font-weight: 600;
+                border: none;
+                border-radius: 8px;
+                background-color: transparent;
+                text-align: left;
+            }
+            
+            .hero {
+                flex-direction: column;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-logo {
+                display: none;
+            }
+            
+            .hero-text {
+                flex: 0 0 auto;
+                width: 100%;
+                text-align: center;
+                padding: 2rem 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Sonoran <span class="green">Green</span></div>
+            
+            <!-- Mobile Logo -->
+            <div class="mobile-logo">
+                <!-- EDIT THIS: Replace this placeholder with your actual logo -->
+                <!-- When you have your logo, uncomment the line below and delete the placeholder div -->
+                <img src="Images/sonoran-green-window-cleaning-logo.png" alt="Sonoran Green Window Cleaning - Veteran owned eco friendly service in Gilbert Arizona" class="mobile-logo-img">
+                
+               
+            </div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <!-- Logo Section - 40% width -->
+            <div class="hero-logo">
+                <!-- EDIT THIS: Replace this placeholder with your actual logo -->
+                <!-- When you have your logo, uncomment the line below and delete the placeholder div -->
+                <img src="Images/sonoran-green-window-cleaning-logo.png" alt="Sonoran Green Window Cleaning Logo - Veteran owned eco friendly window cleaning serving Phoenix Metro" class="hero-logo-img">
+                
+                
+            </div>
+            
+            <!-- Text Section - 60% width -->
+            <div class="hero-text">
+                <h1>Crystal Clear Windows<br>Eco Friendly Clean</h1>
+                <p class="tagline">Veteran Owned Window Cleaning Service in the Phoenix East Valley</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating CTA Button -->
+    <div style="text-align: center; margin: 35px 0 -3px 0; position: relative; z-index: 10;">
+        <a href="contact.html" class="cta-button">Request Service</a>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>No hidden fees. No complicated contracts. Just clean windows at fair prices.</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Exterior Only</h3>
+                    <div class="price">$8<span class="price-unit">/window</span></div>
+                    <ul>
+                        <li>Outside glass cleaned</li>
+                        <li>Light frame wiping</li>
+                        <li>Sill cleaning</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Complete Service</h3>
+                    <div class="price">$12<span class="price-unit">/window</span></div>
+                    <ul>
+                        <li>Interior & exterior glass</li>
+                        <li>Sills cleaned</li>
+                        <li>Tracks cleaned and vacuumed</li>
+                        <li>Light frame wiping</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Screen Cleaning</h3>
+                    <div class="price">$8<span class="price-unit">/screen</span></div>
+                    <ul>
+                        <li>Window screens only</li>
+                        <li>Scrubbed and rinsed</li>
+                        <li>Light frame wiping</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="background-color: #f8f9f8; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #4a7c2c;">
+                <p style="margin: 0; font-size: 1.1rem;"><strong>$80 Minimum Service Charge</strong></p>
+                <p style="margin: 0.5rem 0 0 0; color: #666;"></p>
+            </div>
+            
+            <div style="background-color: #fff3cd; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; border-left: 4px solid #d4a574;">
+                <p style="margin: 0; font-size: 1.1rem;"><strong>First Floor Windows Only</strong></p>
+                <p style="margin: 0.5rem 0 0 0; color: #666;">Up to 10 feet high from the ground.</p>
+            </div>
+            
+            <div style="background-color: #e3f2fd; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; border-left: 4px solid #2196F3;">
+                <p style="margin: 0; font-size: 1.1rem;"><strong>French Doors: $4/window complete</strong></p>
+                <p style="margin: 0.5rem 0 0 0; color: #666;">Incredible value! Save over $100 compared to other service providers.</p>
+            </div>
+            
+            <div style="background-color: #fef3e9; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; border-left: 4px solid #d97528;">
+                <p style="margin: 0; font-size: 1.1rem;"><strong>Extra Large Windows Upcharge</strong></p>
+                <p style="margin: 0.5rem 0 0 0; color: #666;">Individual windows larger than 6 feet count as 2 windows.</p>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section id="why-us">
+            <h2>Why Choose Sonoran Green?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Veteran Owned Small Business</h3>
+                    <p>Built on the military values of hard work, integrity, and attention to detail.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>EPA-Approved, Eco-Friendly Cleaners</h3>
+                    <p>We use only non-toxic cleaning solutions that are tough on dirt but gentle on the planet and safe for your family and pets.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Meticulous Attention to Detail</h3>
+                    <p>Every window is cleaned to perfection. We don't cut corners—we clean them. Streak-free results guaranteed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Reliable & Professional Service</h3>
+                    <p>We show up on time, work efficiently, and respect your property. Professional service you can count on, every single time.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Service Areas -->
+        <section id="service-areas">
+            <h2>Proudly Serving the Phoenix East Valley and Scottsdale</h2>
+            
+            <!-- EDIT THIS: Replace this placeholder with your actual service area map -->
+            <!-- When you have your map image, uncomment the line below and delete the placeholder div -->
+            <img src="Images/sonoran-green-window-cleaning-service-area-phoenix-east-valley-scottsdale-arizona.jpg" alt="Sonoran Green Window Cleaning service area map covering Gilbert, Chandler, Mesa, Tempe, Queen Creek, Apache Junction, San Tan Valley, and Scottsdale in Phoenix Metro Arizona with eco friendly residential window cleaning" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 0 auto; display: block;">
+            
+            
+            
+            <p style="margin-top: 1.5rem;">As a small business, we value our local communities. If you need reliable, eco-friendly window cleaning, we've got you covered. Our service area includes residential properties throughout Gilbert, Chandler, Mesa, Tempe, Queen Creek, Apache Junction, San Tan Valley, and Scottsdale.</p>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        
+        <p><strong>Sonoran Green Window Cleaning</strong></p>
+        <p>Veteran Owned Small Business • Eco Friendly • Serving the Phoenix East Valley and Scottsdale</p>
+        <p>📍 Based in Gilbert, AZ 85295</p>
+        <div class="footer-cities">
+            Serving: Gilbert | Chandler | Mesa | Tempe | Queen Creek | Apache Junction | San Tan Valley | Scottsdale
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 Sonoran Green Window Cleaning LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
